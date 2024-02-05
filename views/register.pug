@@ -1,0 +1,15 @@
+// register.pug
+doctype html
+html
+  head
+    title Register
+  body
+    h1 Register
+    form(action="/signup", method="post")
+      label(for="username") Username:
+      input(type="text", id="username", name="username", required)
+      br
+      label(for="password") Password:
+      input(type="password", id="password", name="password", required)
+      br
+      input(type="submit", value="Register")
